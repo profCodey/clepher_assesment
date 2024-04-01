@@ -4,8 +4,6 @@ function Earnings() {
   const symbol = import.meta.env.VITE_SYMBOL;
   const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
 
-  console.log("symbol", symbol);
-
   const stockData = useStockData(symbol, apiKey);
 
   if (stockData?.Information)

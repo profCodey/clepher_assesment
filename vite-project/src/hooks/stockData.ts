@@ -16,9 +16,7 @@ export function useStockData(
         const { data } = await axios.get<ApiResponse>(
           `https://www.alphavantage.co/query?function=EARNINGS&symbol=${symbol}&apikey=${apiKey}`
         );
-        console.log("data data", data);
         setStockInfo(data);
-        console.log("stock", stockInfo);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
