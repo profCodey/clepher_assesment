@@ -15,7 +15,7 @@ function Earnings() {
     );
 
   return (
-    <div className="">
+    <div className="mx-10 my-10">
       <h1>Stock Data</h1>
       <div>
         {stockData ? (
