@@ -8,7 +8,7 @@ function Earnings() {
 
   if (stockData?.Information)
     return (
-      <div className="ml-10">
+      <div className="mx-10 my-10">
         <h1>Stock Data</h1>
         <p>{stockData.Information}</p>
       </div>
