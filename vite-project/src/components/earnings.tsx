@@ -1,8 +1,10 @@
 import { useStockData } from "../hooks/stockData";
 
 function Earnings() {
-  const symbol = "IBM";
-  const apiKey = "RIBXT3XYLI69PC0Q";
+  const symbol = import.meta.env.VITE_SYMBOL;
+  const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
+
+  console.log("symbol", symbol);
 
   const stockData = useStockData(symbol, apiKey);
 
